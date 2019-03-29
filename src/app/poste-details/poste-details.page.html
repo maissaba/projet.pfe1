@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start" >
+          <ion-back-button defaultHref="/liste-poste"></ion-back-button>
+        </ion-buttons>
+    <ion-title>Poste Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+    <ion-item > 
+
+     <ion-label>Name{{   poste.Name  }}</ion-label>
+    <ion-label>Postal Code {{   poste.codePostale }}</ion-label>
+    <ion-label>Governorate {{ poste.governorate }}</ion-label>
+    <ion-label>Latitude {{    poste.lat }}</ion-label>
+    <ion-label>Longitude {{    poste.lng}}</ion-label></ion-item>
+  
+</ion-content>

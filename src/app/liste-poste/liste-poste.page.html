@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>List Post</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-list *ngFor="let x of (tab|async)" [routerLink]="['/poste-details',x.id]" >
+    
+        <ion-item > 
+    
+         <ion-label>Name{{   x.Name  }}</ion-label>
+        <ion-label>Postal Code {{    x.codePostale }}</ion-label>
+        <ion-label>Governorate {{  x.governorate }}</ion-label>
+        <ion-label>Latitude {{    x.lat }}</ion-label>
+        <ion-label>Longitude {{    x.lng}}</ion-label></ion-item>
+      </ion-list>
+
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+        <ion-fab-button color="primary" routerLink="/add-poste">
+          <ion-icon name="add" ></ion-icon>
+        </ion-fab-button>
+      </ion-fab>
+
+</ion-content>

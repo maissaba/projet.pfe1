@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+      
+          <ion-buttons slot="start" >
+            <ion-back-button defaultHref="/liste-poste"></ion-back-button>
+          </ion-buttons>
+          
+        
+    <ion-title>Add Post</ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    
+      
+    <ion-input placeholder="Name" [(ngModel)]="poste.name"></ion-input>
+    <ion-input placeholder="Postal code" [(ngModel)]="poste.codePostale"></ion-input>
+    <ion-input placeholder="Governorate "  [(ngModel)]="poste.governorate"></ion-input>
+    <ion-input placeholder="Latitude"  [(ngModel)]="poste.lat"></ion-input>
+    <ion-input placeholder="Longitude"  [(ngModel)]="poste.lng"></ion-input>
+
+    <ion-button (click)="add()">Add Post</ion-button>
+
+</ion-content>
